@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-aszk
+  namespace: build-e2e-zshe-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e0e8e8cdba906df760019e4e56ad4ab47be58e31f2c6cf46ed41336e04eaeeac
+        name: my-python
+        resources: {}
+status: {}
